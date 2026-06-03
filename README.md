@@ -1,37 +1,32 @@
-File Download Simulator 📥
+# File Download Simulator 📥
+
 A JavaFX application that simulates concurrent file downloads to demonstrate multi-threading concepts in Java.
 
-Overview
-This project is a requirement for the Programming III Lab. The main objective is to simulate downloading 3 files simultaneously. Each download runs on its own individual thread to ensure the UI remains responsive throughout the process.
+---
 
-Features
-Concurrent Downloading: Simulates downloading 3 files at the same time without blocking the UI.
+## 📋 Overview
+This project is a requirement for the **Programming III Lab**. The main objective is to simulate downloading **3 files** simultaneously. Each download runs on its own individual thread to ensure the UI remains responsive throughout the process, without using a thread pool.
 
-Multi-threading: Uses a dedicated Thread for each download task (no thread pool).
+## ✨ Features
+* **Concurrent Downloading:** Simulates downloading 3 files at the same time.
+* **Multi-threading:** Uses a dedicated `Thread` for each download task.
+* **Progress Tracking:** Real-time visual updates for each file's progress bar.
+* **UI Responsiveness:** Utilizes `Platform.runLater` to ensure thread-safe UI updates.
 
-Progress Tracking: Real-time updates for each file's progress bar.
+## 🛠 Requirements
+* Java JDK 11 or higher.
+* JavaFX SDK.
+* Scene Builder (for UI editing).
 
-UI Responsiveness: Utilizes Platform.runLater to ensure thread-safe UI updates.
+## 🚀 How to Run
+1. Clone this repository to your local machine.
+2. Open the project in your IDE (e.g., NetBeans, IntelliJ).
+3. Ensure the JavaFX libraries are correctly configured in your project settings.
+4. Run `Main.java` to start the application.
+5. Click **"Start Downloads"** to begin the simulation.
 
-Requirements
-Java JDK 11 or higher.
+## 🏷 Tags
+#Java #JavaFX #Multithreading #Concurrency #ProgrammingLab #FileDownloader
 
-JavaFX SDK.
-
-Scene Builder (for UI editing).
-
-How to Run
-Clone this repository to your local machine.
-
-Open the project in your IDE (e.g., NetBeans, IntelliJ).
-
-Ensure the JavaFX libraries are correctly configured in your project settings.
-
-Run Main.java to start the application.
-
-Click "Start Downloads" to begin the simulation.
-
-Technical Details
-Pattern: MVC (Model-View-Controller).
-
-Concurrency: Each file download is implemented as a Runnable task executed in a separate Thread.
+---
+*Created for Programming III Lab (CSCI 2108)*
